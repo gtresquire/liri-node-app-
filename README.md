@@ -1,5 +1,5 @@
 # liri-node-app-
-LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and Recognition Interface, LIRI is a _Language_ Interpretation and Recognition Interface. LIRI will be a command line node app that takes in parameters and gives you back data.
+LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and Recognition Interface, LIRI is a _Language_ Interpretation and Recognition Interface. LIRI is a command line node app that takes in parameters and gives you back data.
 
 * To run this program you will need to create a file named `.env`, add the following to it, replacing the values with your API keys (no quotes) once you have them:
 
@@ -24,6 +24,8 @@ SPOTIFY_SECRET=your-spotify-secret
      * Venue location
 
      * Date of the Event (use moment to format this as "MM/DD/YYYY")
+     
+     ![concert this](concertthis.png)
 
 2. `node liri.js spotify-this-song '<song name here>'`
 
@@ -38,7 +40,8 @@ SPOTIFY_SECRET=your-spotify-secret
      * The album that the song is from
 
    * If no song is provided then your program will default to "The Sign" by Ace of Base.
-
+   
+ ![spotify this](spotifythis.png)
 
 3. `node liri.js movie-this '<movie name here>'`
 
@@ -60,10 +63,13 @@ SPOTIFY_SECRET=your-spotify-secret
      * If you haven't watched "Mr. Nobody," then you should: <http://www.imdb.com/title/tt0485947/>
 
      * It's on Netflix!
-
+     
+ ![movie this](moviethis.png)
 
 4. `node liri.js do-what-it-says`
 
    * Using the `fs` Node package, LIRI will take the text inside of random.txt and then use it to call one of LIRI's commands.
 
      * It should run `spotify-this-song` for "I Want it That Way," as follows the text in `random.txt`.
+     
+ ![do what it says ](whatitsays.png)
