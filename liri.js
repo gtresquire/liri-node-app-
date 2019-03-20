@@ -1,15 +1,24 @@
 
 //initialize variables
+
+
 require("dotenv").config();
-const keys = require('./keys.js');
-const request = require('request');
-const moment = require('moment');
-const Spotify = require('node-spotify-api');
-const fs = require("fs");
 
-var spotify = new Spotify(keys.Spotify);
+let keys = require('./keys.js');
 
-//const spotify = new Spotify(keys.Spotify);
+let Spotify = require('node-spotify-api');
+
+let spotify = new Spotify(keys.spotify);
+
+
+let request = require('request');
+let moment = require('moment');
+let fs = require("fs");
+
+
+// // let Spotify = require('node-spotify-api');
+// let spotify = new Spotify(keys.Spotify);
+
 
 let action = process.argv[2];
 let name = process.argv.slice(3).join(' ');
