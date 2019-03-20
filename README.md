@@ -25,7 +25,7 @@ SPOTIFY_SECRET=your-spotify-secret
 
      * Date of the Event (use moment to format this as "MM/DD/YYYY")
      
-     ![concert this](concertthis.png)
+     ![concert this](concerthis.png)
 
 2. `node liri.js spotify-this-song '<song name here>'`
 
