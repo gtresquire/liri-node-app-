@@ -1,0 +1,26 @@
+{
+  "name": "ls",
+  "version": "1.0.0",
+  "description": "liribot",
+  "main": "keys.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "y"
+  },
+  "keywords": [
+    "liribot"
+  ],
+  "author": "greg",
+  "license": "SEE LICENSE IN README.MD",
+  "dependencies": {
+    "dotenv": "^7.0.0",
+    "moment": "^2.24.0",
+    "node-spotify-api": "^1.0.7",
+    "process-env": "^1.1.0",
+    "request": "^2.88.0",
+    "spotify": "^0.3.0"
+  }
+}
